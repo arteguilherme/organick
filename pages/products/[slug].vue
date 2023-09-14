@@ -2,13 +2,11 @@
 import { ArrowRightCircleIcon, StarIcon } from "@heroicons/vue/20/solid";
 import { TabGroup, TabList, Tab, TabPanels, TabPanel } from "@headlessui/vue";
 
-import ProductCard from "@/components/ProductCard.vue";
-
 const reviews = { href: "#", average: 4, totalCount: 117 };
 const product = {
   id: 3,
   name: "Castanha",
-  href: "#",
+    href: "/products/teste",
   imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694204/organick/Castanha02-removebg_wueeyl.png",
   imageAlt: "Front of men's Basic Tee in black.",
   summary:
@@ -22,7 +20,7 @@ const products = [
   {
     id: 1,
     name: "Brocolis",
-    href: "#",
+    href: "/products/teste",
     imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694202/organick/Brocolis-removebg_aufhos.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$13.00",
@@ -30,7 +28,7 @@ const products = [
   {
     id: 2,
     name: "Banana",
-    href: "#",
+    href: "/products/teste",
     imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694200/organick/Banana-removebg_gyiabu.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$16.00",
@@ -38,7 +36,7 @@ const products = [
   {
     id: 3,
     name: "Castanha",
-    href: "#",
+    href: "/products/teste",
     imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694204/organick/Castanha02-removebg_wueeyl.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$21.00",
@@ -46,7 +44,7 @@ const products = [
   {
     id: 4,
     name: "Tomate",
-    href: "#",
+    href: "/products/teste",
     imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694198/organick/Tomate-removebg_qedo0k.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$12.00",

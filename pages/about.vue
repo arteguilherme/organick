@@ -21,7 +21,7 @@ const teams = [
   {
     id: 1,
     name: "Giovani Bacardo",
-    imageSrc: "Giovani.jpg",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694185/organick/Giovani_gdlmnq.jpg",
     role: "Farmer",
     socialNetwork: [
       { name: "facebook", link: "https://www.facebook.com/giovani_bacardo" },
@@ -31,7 +31,7 @@ const teams = [
   {
     id: 2,
     name: "Marianne Loreno",
-    imageSrc: "Marianne.jpg",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694186/organick/Marianne_ibjeqr.jpg",
     role: "Designer",
     socialNetwork: [
       { name: "instagram", link: "https://www.instagram.com/marianne_loreno" },
@@ -42,7 +42,7 @@ const teams = [
   {
     id: 3,
     name: "Riga Pelore",
-    imageSrc: "Riga.jpg",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694194/organick/Riga_pwlqrz.jpg",
     role: "Farmer",
     socialNetwork: [
       { name: "instagram", link: "https://www.instagram.com/riga_pelore" },
