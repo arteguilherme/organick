@@ -29,7 +29,7 @@
       <div v-for="item in news" :key="item.id">
         <div class="relative">
           <img
-            :src="`_nuxt/assets/images/${item.imageSrc}`"
+            :src="`@/assets/images/${item.imageSrc}`"
             alt=""
             class="rounded-3xl"
           />

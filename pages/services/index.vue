@@ -5,7 +5,7 @@ import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
   <Header />
   <div class="relative isolate overflow-hidden bg-blue-950 py-10 sm:py-10">
     <img
-      src="http://localhost:3000/_nuxt/assets/images/BannerServices.jpg"
+      src="@/assets/images/BannerServices.jpg"
       alt=""
       class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
     />
@@ -32,10 +32,7 @@ import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
       >
         <div class="space-y-8 mt-28">
           <div class="flex flex-col justify-end items-end space-y-1">
-            <img
-              src="http://localhost:3000/_nuxt/assets/images/ServicesIcon1.svg"
-              alt="Milk icon"
-            />
+            <img src="@/assets/images/ServicesIcon1.svg" alt="Milk icon" />
             <h2 class="text-2xl font-medium text-blue-950">Dairy Products</h2>
             <p class="text-lg text-gray-600 text-right">
               Sed ut perspiciatis unde omnis iste natus error sit voluptat
@@ -43,10 +40,7 @@ import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
             </p>
           </div>
           <div class="flex flex-col justify-end items-end space-y-1">
-            <img
-              src="http://localhost:3000/_nuxt/assets/images/ServicesIcon2.svg"
-              alt="Milk icon"
-            />
+            <img src="@/assets/images/ServicesIcon2.svg" alt="Milk icon" />
             <h2 class="text-2xl font-medium text-blue-950">Store Services</h2>
             <p class="text-lg text-gray-600 text-right">
               Sed ut perspiciatis unde omnis iste natus error sit voluptat
@@ -54,10 +48,7 @@ import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
             </p>
           </div>
           <div class="flex flex-col justify-end items-end space-y-1">
-            <img
-              src="http://localhost:3000/_nuxt/assets/images/ServicesIcon3.svg"
-              alt="Milk icon"
-            />
+            <img src="@/assets/images/ServicesIcon3.svg" alt="Milk icon" />
             <h2 class="text-2xl font-medium text-blue-950">
               Delivery Services
             </h2>
@@ -70,16 +61,13 @@ import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
         <div class="flex justify-center col-start-2 col-span-2">
           <img
             class="w-full"
-            src="http://localhost:3000/_nuxt/assets/images/ServicesImage-removebg.png"
+            src="@/assets/images/ServicesImage-removebg.png"
             alt=""
           />
         </div>
         <div class="space-y-8 mt-28">
           <div class="flex flex-col justify-start items-start space-y-1">
-            <img
-              src="http://localhost:3000/_nuxt/assets/images/ServicesIcon4.svg"
-              alt="Milk icon"
-            />
+            <img src="@/assets/images/ServicesIcon4.svg" alt="Milk icon" />
             <h2 class="text-2xl font-medium text-blue-950">
               Agricultural Services
             </h2>
@@ -89,10 +77,7 @@ import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
             </p>
           </div>
           <div class="flex flex-col justify-start items-start space-y-1">
-            <img
-              src="http://localhost:3000/_nuxt/assets/images/ServicesIcon5.svg"
-              alt="Milk icon"
-            />
+            <img src="@/assets/images/ServicesIcon5.svg" alt="Milk icon" />
             <h2 class="text-2xl font-medium text-blue-950">Organic Products</h2>
             <p class="text-lg text-gray-600">
               Sed ut perspiciatis unde omnis iste natus error sit voluptat
@@ -100,10 +85,7 @@ import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
             </p>
           </div>
           <div class="flex flex-col justify-start items-start space-y-1">
-            <img
-              src="http://localhost:3000/_nuxt/assets/images/ServicesIcon6.svg"
-              alt="Milk icon"
-            />
+            <img src="@/assets/images/ServicesIcon6.svg" alt="Milk icon" />
             <h2 class="text-2xl font-medium text-blue-950">Fresh Vegetables</h2>
             <p class="text-lg text-gray-600">
               Sed ut perspiciatis unde omnis iste natus error sit voluptat
@@ -124,7 +106,7 @@ import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
     </div>
   </div>
   <div
-    class="bg-[url(http://localhost:3000/_nuxt/assets/images/SomenteOrganicos.jpg)] bg-cover bg-center h-[50rem] mb-10"
+    class="bg-[url(@/assets/images/SomenteOrganicos.jpg)] bg-cover bg-center h-[50rem] mb-10"
   >
     <div class="mx-auto flex justify-center max-w-screen-2xl py-28 px-6">
       <div class="mb-4 w-3/6 flex flex-col justify-center items-center">

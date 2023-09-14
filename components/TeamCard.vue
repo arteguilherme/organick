@@ -10,7 +10,7 @@ const props = defineProps({
   >
     <img
       class="rounded-t-3xl"
-      :src="`_nuxt/assets/images/${team.imageSrc}`"
+      :src="`@/assets/images/${team.imageSrc}`"
       :alt="team.name"
     />
     <div class="p-6">

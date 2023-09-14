@@ -184,7 +184,7 @@ const teams = [
         </div>
         <img
           class="hidden sm:block rounded-3xl"
-          src="_nuxt/assets/images/NosEscolher.jpg"
+          src="@/assets/images/NosEscolher.jpg"
           alt="Fruit image"
         />
       </div>

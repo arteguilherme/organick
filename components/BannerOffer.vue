@@ -5,7 +5,7 @@
     >
       <div v-for="feature in features" :key="feature.id" class="relative">
         <img
-          :src="`_nuxt/assets/images/${feature.images}`"
+          :src="`@/assets/images/${feature.images}`"
           alt=""
           class="rounded-3xl"
         />

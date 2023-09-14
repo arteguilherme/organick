@@ -3,7 +3,7 @@
   <Header />
   <div class="relative isolate overflow-hidden bg-blue-950 py-10 sm:py-10">
     <img
-      src="http://localhost:3000/_nuxt/assets/images/BannerPortfolio.jpg"
+      src="@/assets/images/BannerPortfolio.jpg"
       alt=""
       class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
     />

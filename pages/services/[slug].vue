@@ -3,7 +3,7 @@
   <Header />
   <div class="relative isolate overflow-hidden bg-blue-950 py-10 sm:py-10">
     <img
-      src="http://localhost:3000/_nuxt/assets/images/BannerQuality.jpg"
+      src="@/assets/images/BannerQuality.jpg"
       alt=""
       class="absolute inset-0 -z-10 h-full w-full object-cover md:object-center"
     />
@@ -15,11 +15,7 @@
   </div>
   <div class="overflow-hidden py-16 sm:py-16">
     <div class="mx-auto max-w-7xl">
-      <img
-        src="http://localhost:3000/_nuxt/assets/images/Plantar.jpg"
-        alt=""
-        class="w-full"
-      />
+      <img src="@/assets/images/Colhendo.jpg" alt="" class="w-full" />
       <div class="mx-auto max-w-4xl">
         <h2 class="text-5xl font-bold text-blue-950 py-12">
           Organic Store Services
@@ -37,7 +33,7 @@
         <figure class="md:flex my-16 space-x-8">
           <img
             class="md:w-[20rem] rounded-2xl mx-auto drop-shadow-md"
-            src="http://localhost:3000/_nuxt/assets/images/Plantando.jpg"
+            src="@/assets/images/Plantando.jpg"
             alt=""
           />
           <div
@@ -70,7 +66,7 @@
           </div>
           <img
             class="md:w-[20rem] rounded-2xl mx-auto drop-shadow-md"
-            src="http://localhost:3000/_nuxt/assets/images/Plantando.jpg"
+            src="@/assets/images/Muda.jpg"
             alt=""
           />
         </figure>

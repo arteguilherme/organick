@@ -8,7 +8,7 @@
         >Vegetable</span
       >
       <img
-        :src="`http://localhost:3000/_nuxt/assets/images/${product.imageSrc}`"
+        :src="`@/assets/images/${product.imageSrc}`"
         :alt="product.imageAlt"
         class="h-full w-full object-cover object-center lg:h-full lg:w-full"
       />

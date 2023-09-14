@@ -62,7 +62,7 @@ const products = [
       >
         <img
           class="object-cover object-center mix-blend-multiply"
-          :src="`http://localhost:3000/_nuxt/assets/images/${product.imageSrc}`"
+          :src="`@/assets/images/${product.imageSrc}`"
         />
         <span
           class="absolute top-10 left-10 font-medium px-4 py-1 rounded-lg bg-blue-950 text-white"

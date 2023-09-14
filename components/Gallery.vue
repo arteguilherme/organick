@@ -5,11 +5,7 @@
     >
       <div v-for="gallery in galleries" :key="gallery.id">
         <div class="relative">
-          <img
-            :src="`_nuxt/assets/images/${gallery.imageSrc}`"
-            alt=""
-            class=""
-          />
+          <img :src="`@/assets/images/${gallery.imageSrc}`" alt="" class="" />
           <routerLink
             to="#"
             class="absolute top-56 left-40 bg-white text-blue-950 text-2xl px-14 py-5 rounded-xl hover:bg-blue-950 hover:text-white ease-linear transition-all duration-150"
