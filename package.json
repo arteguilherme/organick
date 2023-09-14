@@ -20,6 +20,7 @@
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
     "@pinia/nuxt": "^0.4.11",
+    "joi": "^17.10.1",
     "mongoose": "^7.5.1",
     "mongoose-slug-generator": "^1.0.4",
     "pinia": "^2.1.6",

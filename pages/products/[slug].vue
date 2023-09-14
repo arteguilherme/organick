@@ -9,7 +9,7 @@ const product = {
   id: 3,
   name: "Castanha",
   href: "#",
-  imageSrc: "Castanha02-removebg.png",
+  imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694204/organick/Castanha02-removebg_wueeyl.png",
   imageAlt: "Front of men's Basic Tee in black.",
   summary:
     "Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
@@ -23,7 +23,7 @@ const products = [
     id: 1,
     name: "Brocolis",
     href: "#",
-    imageSrc: "Brocolis-removebg.png",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694202/organick/Brocolis-removebg_aufhos.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$13.00",
   },
@@ -31,7 +31,7 @@ const products = [
     id: 2,
     name: "Banana",
     href: "#",
-    imageSrc: "Banana-removebg.png",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694200/organick/Banana-removebg_gyiabu.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$16.00",
   },
@@ -39,7 +39,7 @@ const products = [
     id: 3,
     name: "Castanha",
     href: "#",
-    imageSrc: "Castanha02-removebg.png",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694204/organick/Castanha02-removebg_wueeyl.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$21.00",
   },
@@ -47,7 +47,7 @@ const products = [
     id: 4,
     name: "Tomate",
     href: "#",
-    imageSrc: "Tomate-removebg.png",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694198/organick/Tomate-removebg_qedo0k.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$12.00",
   },
@@ -62,7 +62,7 @@ const products = [
       >
         <img
           class="object-cover object-center mix-blend-multiply"
-          :src="`@/assets/images/${product.imageSrc}`"
+          :src="`${product.imageSrc}`"
         />
         <span
           class="absolute top-10 left-10 font-medium px-4 py-1 rounded-lg bg-blue-950 text-white"

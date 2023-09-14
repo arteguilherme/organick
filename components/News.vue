@@ -29,7 +29,7 @@
       <div v-for="item in news" :key="item.id">
         <div class="relative">
           <img
-            :src="`@/assets/images/${item.imageSrc}`"
+            :src="`${item.imageSrc}`"
             alt=""
             class="rounded-3xl"
           />
@@ -83,7 +83,7 @@ const news = [
   {
     id: 1,
     title: "The Benefits of Vitamin D & How to Get It",
-    imageSrc: "Lettuce.jpg",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694210/organick/Lettuce_lcllge.jpg",
     summery:
       "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
     auth: "By Rachi Card",
@@ -92,7 +92,7 @@ const news = [
   {
     id: 2,
     title: "Our Favourite Summertime Tommeto",
-    imageSrc: "Tomato.jpg",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694211/organick/Tomato_pib5jw.jpg",
     summery:
       "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
     auth: "By Rachi Card",

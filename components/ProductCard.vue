@@ -8,7 +8,7 @@
         >Vegetable</span
       >
       <img
-        :src="`@/assets/images/${product.imageSrc}`"
+        :src="`${product.imageSrc}`"
         :alt="product.imageAlt"
         class="h-full w-full object-cover object-center lg:h-full lg:w-full"
       />

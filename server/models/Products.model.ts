@@ -27,6 +27,16 @@ const schema: mongoose.Schema = new mongoose.Schema(
       type: Boolean,
       default: 0,
     },
+    published: {
+      type: Date,
+      required: true,
+    },
+    categories: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Category",
+      },
+    ],
     image: {
       type: String,
     },

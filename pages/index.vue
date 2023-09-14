@@ -17,7 +17,7 @@ const products = [
     id: 1,
     name: "Brocolis",
     href: "#",
-    imageSrc: "Brocolis-removebg.png",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694202/organick/Brocolis-removebg_aufhos.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$13.00",
   },

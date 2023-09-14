@@ -1,7 +1,4 @@
 <script setup>
-import Header from "@/components/Header.vue";
-import TeamCard from "@/components/TeamCard.vue";
-
 import {
   ArrowRightCircleIcon,
   CreditCardIcon,
@@ -10,17 +7,14 @@ import {
   ShoppingBagIcon,
 } from "@heroicons/vue/20/solid";
 
-import OrganicIcon from "@/assets/images/Trator.svg";
-import PostBoxIcon from "@/assets/images/Industria.svg";
-
 const features = [
   {
     name: "Modern Agriculture Equipment",
-    icon: OrganicIcon,
+    icon: 'https://res.cloudinary.com/arteguilherme/image/upload/v1694694198/organick/Trator_f2loip.svg',
   },
   {
     name: "No growth hormones are used",
-    icon: PostBoxIcon,
+    icon: 'https://res.cloudinary.com/arteguilherme/image/upload/v1694694184/organick/Industria_mwv3ni.svg',
   },
 ];
 const teams = [
@@ -62,7 +56,7 @@ const teams = [
   <Header />
   <div class="relative isolate overflow-hidden bg-blue-950 py-10 sm:py-10">
     <img
-      src="@/assets/images/BannerAboutus.jpg"
+      src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694211/organick/BannerAboutus_c8gsvk.jpg"
       alt=""
       class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
     />
@@ -78,7 +72,7 @@ const teams = [
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
       >
         <img
-          src="@/assets/images/AboutUS.png"
+          src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694213/organick/AboutUS_p57sfm.png"
           alt="Product screenshot"
           class="w-full"
         />
@@ -184,7 +178,7 @@ const teams = [
         </div>
         <img
           class="hidden sm:block rounded-3xl"
-          src="@/assets/images/NosEscolher.jpg"
+          src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694188/organick/NosEscolher_elwllk.jpg"
           alt="Fruit image"
         />
       </div>
@@ -298,7 +292,7 @@ const teams = [
       >
         <NuxtLink to="/categories" class="h-80 space-y-2">
           <img
-            src="@/assets/images/Temperos.jpg"
+            src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694198/organick/Temperos_xxjmc9.jpg"
             alt=""
             class="h-full w-full rounded-2xl object-cover object-right md:object-center"
           />
@@ -306,7 +300,7 @@ const teams = [
         </NuxtLink>
         <NuxtLink to="/categories" class="h-80 space-y-2">
           <img
-            src="@/assets/images/Castanhas.jpg"
+            src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694205/organick/Castanhas_zucmxx.jpg"
             alt=""
             class="h-full w-full rounded-2xl object-cover object-right md:object-center"
           />
@@ -314,7 +308,7 @@ const teams = [
         </NuxtLink>
         <NuxtLink to="/categories" class="h-80 space-y-2">
           <img
-            src="@/assets/images/Roma.jpg"
+            src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694194/organick/Roma_txsxl2.jpg"
             alt=""
             class="h-full w-full rounded-2xl object-cover object-right md:object-center"
           />
@@ -322,7 +316,7 @@ const teams = [
         </NuxtLink>
         <NuxtLink to="/categories" class="h-80 space-y-2">
           <img
-            src="@/assets/images/Gengibre.jpg"
+            src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694185/organick/Gengibre_guz0qo.jpg"
             alt=""
             class="h-full w-full rounded-2xl object-cover object-right md:object-center"
           />

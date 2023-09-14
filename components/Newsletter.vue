@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-7xl py-12 sm:py-16">
     <div
-      class="bg-[url(/assets/images/Newsletter.jpg)] bg-cover bg-center py-20 px-16 rounded-3xl p-20"
+      class="bg-[url(https://res.cloudinary.com/arteguilherme/image/upload/v1694694187/organick/Newsletter_w5ojlj.jpg)] bg-cover bg-center py-20 px-16 rounded-3xl p-20"
     >
       <div
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-36 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"

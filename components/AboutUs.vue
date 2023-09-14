@@ -5,7 +5,7 @@
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
       >
         <img
-          src="@/assets/images/Photo-1.png"
+          src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694210/organick/Photo-1_trsvql.png"
           alt="Product screenshot"
           class="w-full"
         />
@@ -59,21 +59,19 @@
 
 <script setup>
 import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
-import OrganicIcon from "@/assets/images/Leave.svg";
-import PostBoxIcon from "@/assets/images/PostBox.svg";
 
 const features = [
   {
     name: "Organic Foods Only",
     description:
       "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    icon: OrganicIcon,
+    icon: 'https://res.cloudinary.com/arteguilherme/image/upload/v1694694184/organick/Leave_tvses8.svg',
   },
   {
     name: "Quality Standards",
     description:
       "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    icon: PostBoxIcon,
+    icon: 'https://res.cloudinary.com/arteguilherme/image/upload/v1694694192/organick/PostBox_yclghr.svg',
   },
 ];
 </script>

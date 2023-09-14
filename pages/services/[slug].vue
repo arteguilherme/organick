@@ -3,7 +3,7 @@
   <Header />
   <div class="relative isolate overflow-hidden bg-blue-950 py-10 sm:py-10">
     <img
-      src="@/assets/images/BannerQuality.jpg"
+      src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694201/organick/BannerQuality_fktkkt.jpg"
       alt=""
       class="absolute inset-0 -z-10 h-full w-full object-cover md:object-center"
     />
@@ -15,7 +15,7 @@
   </div>
   <div class="overflow-hidden py-16 sm:py-16">
     <div class="mx-auto max-w-7xl">
-      <img src="@/assets/images/Colhendo.jpg" alt="" class="w-full" />
+      <img src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694207/organick/Colhendo_yrycpk.jpg" alt="" class="w-full" />
       <div class="mx-auto max-w-4xl">
         <h2 class="text-5xl font-bold text-blue-950 py-12">
           Organic Store Services
@@ -33,7 +33,7 @@
         <figure class="md:flex my-16 space-x-8">
           <img
             class="md:w-[20rem] rounded-2xl mx-auto drop-shadow-md"
-            src="@/assets/images/Plantando.jpg"
+            src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694192/organick/Plantando_ejhysz.jpg"
             alt=""
           />
           <div
@@ -66,7 +66,7 @@
           </div>
           <img
             class="md:w-[20rem] rounded-2xl mx-auto drop-shadow-md"
-            src="@/assets/images/Muda.jpg"
+            src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694186/organick/Muda_j6uhjf.jpg"
             alt=""
           />
         </figure>

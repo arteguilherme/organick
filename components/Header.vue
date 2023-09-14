@@ -1,9 +1,73 @@
+<script setup>
+import { ref } from "vue";
+import {
+  Popover,
+  PopoverButton,
+  PopoverGroup,
+  PopoverPanel,
+} from "@headlessui/vue";
+import {
+  ArrowPathIcon,
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+  ShoppingCartIcon,
+} from "@heroicons/vue/24/outline";
+import {
+  ChevronDownIcon,
+  PhoneIcon,
+  PlayCircleIcon,
+  MagnifyingGlassIcon,
+} from "@heroicons/vue/20/solid";
+import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
+
+const products = [
+  {
+    name: "Analytics",
+    description: "Get a better understanding of your traffic",
+    to: "/analytics",
+    icon: ChartPieIcon,
+  },
+  {
+    name: "Engagement",
+    description: "Speak directly to your customers",
+    to: "/engagement",
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: "Security",
+    description: "Your customers’ data will be safe and secure",
+    to: "/security",
+    icon: FingerPrintIcon,
+  },
+  {
+    name: "Integrations",
+    description: "Connect with third-party tools",
+    to: "/integrations",
+    icon: SquaresPlusIcon,
+  },
+  {
+    name: "Automations",
+    description: "Build strategic funnels that will convert",
+    to: "/automations",
+    icon: ArrowPathIcon,
+  },
+];
+const callsToAction = [
+  { name: "Watch demo", to: "watch_demo", icon: PlayCircleIcon },
+  { name: "Contact sales", to: "/comtact", icon: PhoneIcon },
+];
+
+const mobileMenuOpen = ref(false);
+</script>
+
 <template>
   <header class="bg-white">
     <div
       class="mx-auto flex max-w-screen-2xl items-center justify-between p-6 lg:px-8"
     >
-      <NuxtLink to="/"><img :src="LogoOrganick" alt="my-logo" /></NuxtLink>
+      <NuxtLink to="/"><img src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694185/organick/logo_organick_zn7a9a.svg" alt="my-logo" /></NuxtLink>
       <PopoverGroup class="hidden lg:flex lg:gap-x-8">
         <NuxtLink to="/" class="font-semibold leading-6 text-blue-950"
           >Home</NuxtLink
@@ -179,68 +243,3 @@
     </div>
   </header>
 </template>
-
-<script setup>
-import { ref } from "vue";
-import {
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from "@headlessui/vue";
-import {
-  ArrowPathIcon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  ShoppingCartIcon,
-} from "@heroicons/vue/24/outline";
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-  MagnifyingGlassIcon,
-} from "@heroicons/vue/20/solid";
-import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
-import LogoOrganick from "@/assets/images/logo_organick.svg";
-
-const products = [
-  {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
-    to: "/analytics",
-    icon: ChartPieIcon,
-  },
-  {
-    name: "Engagement",
-    description: "Speak directly to your customers",
-    to: "/engagement",
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: "Security",
-    description: "Your customers’ data will be safe and secure",
-    to: "/security",
-    icon: FingerPrintIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools",
-    to: "/integrations",
-    icon: SquaresPlusIcon,
-  },
-  {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
-    to: "/automations",
-    icon: ArrowPathIcon,
-  },
-];
-const callsToAction = [
-  { name: "Watch demo", to: "watch_demo", icon: PlayCircleIcon },
-  { name: "Contact sales", to: "/comtact", icon: PhoneIcon },
-];
-
-const mobileMenuOpen = ref(false);
-</script>

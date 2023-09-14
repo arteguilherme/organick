@@ -1,7 +1,7 @@
 <template>
-  <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-20">
+  <div class="relative isolate overflow-hidden bg-slate-50 py-16 sm:py-20">
     <img
-      src="@/assets/images/TestimonialImg.svg"
+      src="https://res.cloudinary.com/arteguilherme/image/upload/v1694708220/TestimonialImg_cs1xzn.png"
       alt=""
       class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
     />

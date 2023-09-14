@@ -9,6 +9,12 @@ export default defineNuxtConfig({
   tailwindcss: {
     // Options
     cssPath: "~/assets/css/main.css",
+    configPath: "tailwind.config",
+    exposeConfig: false,
+    exposeLevel: 2,
+    config: {},
+    injectPosition: "first",
+    viewer: true,
   },
   runtimeConfig: {
     MONGO_URI: process.env.MONGO_URI,

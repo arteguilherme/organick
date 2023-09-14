@@ -1,7 +1,24 @@
+<script setup>
+import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
+
+const links = [
+  { name: "Open roles", href: "#" },
+  { name: "Internship program", href: "#" },
+  { name: "Our values", href: "#" },
+  { name: "Meet our leadership", href: "#" },
+];
+const stats = [
+  { name: "Offices worldwide", value: "12" },
+  { name: "Full-time colleagues", value: "300+" },
+  { name: "Hours per week", value: "40" },
+  { name: "Paid time off", value: "Unlimited" },
+];
+</script>
+
 <template>
   <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
     <img
-      :src="BannerImg"
+      src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694202/organick/bg_banner_ntidej.jpg"
       alt=""
       class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
     />
@@ -33,20 +50,3 @@
   </div>
 </template>
 
-<script setup>
-import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
-import BannerImg from "@/assets/images/bg_banner.jpg";
-
-const links = [
-  { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
-];
-const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
-];
-</script>

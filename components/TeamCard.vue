@@ -1,5 +1,4 @@
 <script setup>
-import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
 const props = defineProps({
   team: { type: Object, required: true },
 });
@@ -10,7 +9,7 @@ const props = defineProps({
   >
     <img
       class="rounded-t-3xl"
-      :src="`@/assets/images/${team.imageSrc}`"
+      :src="`${team.imageSrc}`"
       :alt="team.name"
     />
     <div class="p-6">
@@ -22,6 +21,7 @@ const props = defineProps({
         <div class="flex space-x-3 items-center">
           <NuxtLink
             v-for="network in team.socialNetwork"
+            :key="network.id"
             :to="network.link"
             target="_blank"
           >

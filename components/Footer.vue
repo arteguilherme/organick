@@ -27,7 +27,7 @@
         </div>
         <div class="flex col-start-2 col-span-2 flex-col items-center px-10">
           <img
-            src="@/assets/images/logo_organick.svg"
+            src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694185/organick/logo_organick_zn7a9a.svg"
             alt="Logo Organick"
             class="mb-4"
           />
