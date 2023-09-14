@@ -8,7 +8,7 @@
           <img :src="`${gallery.imageSrc}`" alt="" class="" />
           <routerLink
             to="#"
-            class="absolute top-56 left-40 bg-white text-blue-950 text-2xl px-14 py-5 rounded-xl hover:bg-blue-950 hover:text-white ease-linear transition-all duration-150"
+            class="absolute top-[40%] left-[20%] bg-white text-blue-950 text-2xl px-14 py-5 rounded-xl hover:bg-blue-950 hover:text-white ease-linear transition-all duration-150"
             >{{ gallery.title }}</routerLink
           >
         </div>
