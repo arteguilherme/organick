@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --vc-pgn-width: 8px !important;
+    --vc-pgn-height: 8px !important;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+span.small-text {
+    font-family: 'Yellowtail', cursive;
+}
+.carousel__pagination-button::after {
+    border-radius: 6px !important;
+    background-color: #C4C4C4 !important;
+    width: var(--vc-pgn-width);
+    height: var(--vc-pgn-height);
+}
+
+.carousel__pagination-button--active::after {
+    background-color: rgb(22 163 74 / 1) !important;
+}
