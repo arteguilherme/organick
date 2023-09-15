@@ -33,6 +33,6 @@ export default defineNuxtConfig({
     },
   },
   build: {
-    transpile: ["@headlessui/vue", "@headlessui/tailwindcss"],
+    transpile: ["@tailwindcss/forms", "@headlessui/vue", "@headlessui/tailwindcss"],
   },
 });
