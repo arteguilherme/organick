@@ -1,3 +1,27 @@
+<script setup>
+import { ArrowRightCircleIcon, UserIcon } from "@heroicons/vue/20/solid";
+
+const news = [
+  {
+    id: 1,
+    title: "The Benefits of Vitamin D & How to Get It",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694210/organick/Lettuce_lcllge.jpg",
+    summery:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    auth: "By Rachi Card",
+    created_at: "2323-11-25 12:30",
+  },
+  {
+    id: 2,
+    title: "Our Favourite Summertime Tommeto",
+    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694211/organick/Tomato_pib5jw.jpg",
+    summery:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    auth: "By Rachi Card",
+    created_at: "2323-11-25 12:30",
+  },
+];
+</script>
 <template>
   <div class="mx-auto max-w-7xl py-16 sm:py-28">
     <div
@@ -76,27 +100,3 @@
   </div>
 </template>
 
-<script setup>
-import { ArrowRightCircleIcon, UserIcon } from "@heroicons/vue/20/solid";
-
-const news = [
-  {
-    id: 1,
-    title: "The Benefits of Vitamin D & How to Get It",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694210/organick/Lettuce_lcllge.jpg",
-    summery:
-      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    auth: "By Rachi Card",
-    created_at: "2323-11-25 12:30",
-  },
-  {
-    id: 2,
-    title: "Our Favourite Summertime Tommeto",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694211/organick/Tomato_pib5jw.jpg",
-    summery:
-      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    auth: "By Rachi Card",
-    created_at: "2323-11-25 12:30",
-  },
-];
-</script>

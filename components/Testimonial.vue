@@ -1,3 +1,15 @@
+<script setup>
+import { StarIcon } from "@heroicons/vue/20/solid";
+import { Carousel, Pagination, Slide } from "vue3-carousel";
+
+const reviews = { href: "#", average: 5, totalCount: 117 };
+const stats = [
+  { name: "Organic", value: "100%" },
+  { name: "Active Product", value: "285" },
+  { name: "Organic Orchads", value: "350+" },
+  { name: "Years of Farming", value: "25+" },
+];
+</script>
 <template>
   <div class="relative isolate overflow-hidden bg-slate-50 py-16 sm:py-20">
     <img
@@ -92,16 +104,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { StarIcon } from "@heroicons/vue/20/solid";
-import { Carousel, Pagination, Slide } from "vue3-carousel";
-
-const reviews = { href: "#", average: 5, totalCount: 117 };
-const stats = [
-  { name: "Organic", value: "100%" },
-  { name: "Active Product", value: "285" },
-  { name: "Organic Orchads", value: "350+" },
-  { name: "Years of Farming", value: "25+" },
-];
-</script>

@@ -1,3 +1,10 @@
+<script setup>
+const galleries = [
+  { id: 1, imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694189/organick/OrangeJuice_q5imrc.jpg", title: "Organic Juice" },
+  { id: 2, imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694190/organick/OrganicFood_m6ksdi.jpg", title: "Organic Food" },
+  { id: 3, imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694188/organick/NutsCookis_td1wl0.jpg", title: "Nuts Cookis" },
+];
+</script>
 <template>
   <div class="overflow-hidden py-14 sm:py-24 bg-cyan-50">
     <div
@@ -17,10 +24,3 @@
   </div>
 </template>
 
-<script setup>
-const galleries = [
-  { id: 1, imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694189/organick/OrangeJuice_q5imrc.jpg", title: "Organic Juice" },
-  { id: 2, imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694190/organick/OrganicFood_m6ksdi.jpg", title: "Organic Food" },
-  { id: 3, imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694188/organick/NutsCookis_td1wl0.jpg", title: "Nuts Cookis" },
-];
-</script>

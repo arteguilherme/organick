@@ -1,3 +1,22 @@
+<script setup>
+import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
+
+const features = [
+  {
+    name: "Organic Foods Only",
+    description:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    icon: 'https://res.cloudinary.com/arteguilherme/image/upload/v1694694184/organick/Leave_tvses8.svg',
+  },
+  {
+    name: "Quality Standards",
+    description:
+      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+    icon: 'https://res.cloudinary.com/arteguilherme/image/upload/v1694694192/organick/PostBox_yclghr.svg',
+  },
+];
+</script>
+
 <template>
   <div class="overflow-hidden bg-slate-100 py-16 sm:py-28">
     <div class="mx-auto max-w-screen-2xl">
@@ -56,22 +75,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { ArrowRightCircleIcon } from "@heroicons/vue/20/solid";
-
-const features = [
-  {
-    name: "Organic Foods Only",
-    description:
-      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    icon: 'https://res.cloudinary.com/arteguilherme/image/upload/v1694694184/organick/Leave_tvses8.svg',
-  },
-  {
-    name: "Quality Standards",
-    description:
-      "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-    icon: 'https://res.cloudinary.com/arteguilherme/image/upload/v1694694192/organick/PostBox_yclghr.svg',
-  },
-];
-</script>

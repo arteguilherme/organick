@@ -1,3 +1,6 @@
+<script setup>
+import { StarIcon } from "@heroicons/vue/20/solid";
+</script>
 <template>
   <div class="bg-white pb-10 sm:pb-16">
     <div class="mx-auto max-w-7xl">
@@ -100,7 +103,3 @@
     </p>
   </div>
 </template>
-
-<script setup>
-import { StarIcon } from "@heroicons/vue/20/solid";
-</script>

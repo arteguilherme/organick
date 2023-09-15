@@ -1,3 +1,10 @@
+<script setup>
+import { StarIcon } from "@heroicons/vue/20/solid";
+const reviews = { href: "#", average: 4, totalCount: 117 };
+const props = defineProps({
+  product: { type: Object, required: true },
+});
+</script>
 <template>
   <NuxtLink :to="product.href" class="group relative bg-gray-100 rounded-2xl">
     <div
@@ -51,10 +58,3 @@
     </div>
   </NuxtLink>
 </template>
-<script setup>
-import { StarIcon } from "@heroicons/vue/20/solid";
-const reviews = { href: "#", average: 4, totalCount: 117 };
-const props = defineProps({
-  product: { type: Object, required: true },
-});
-</script>

@@ -1,3 +1,25 @@
+<script setup>
+const features = [
+  {
+    id: 1,
+    name: "Start with Our Company First",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
+  },
+  {
+    id: 2,
+    name: "Learn How to Grow Yourself",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
+  },
+  {
+    id: 3,
+    name: "Farming Strategies of Today",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
+  },
+];
+</script>
 <template>
   <div class="overflow-hidden bg-white">
     <div class="">
@@ -43,26 +65,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-const features = [
-  {
-    id: 1,
-    name: "Start with Our Company First",
-    description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
-  },
-  {
-    id: 2,
-    name: "Learn How to Grow Yourself",
-    description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
-  },
-  {
-    id: 3,
-    name: "Farming Strategies of Today",
-    description:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
-  },
-];
-</script>

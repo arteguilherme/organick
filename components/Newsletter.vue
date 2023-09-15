@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
   <div class="mx-auto max-w-7xl py-12 sm:py-16">
     <div
@@ -30,5 +31,3 @@
     </div>
   </div>
 </template>
-
-<script setup></script>
