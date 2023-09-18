@@ -1,5 +1,5 @@
 <script setup>
-import { PhotoIcon, UserCircleIcon } from '@heroicons/vue/24/solid'
+import { PhotoIcon, UserCircleIcon } from "@heroicons/vue/24/solid";
 
 definePageMeta({
   layout: "admin",
@@ -9,44 +9,27 @@ definePageMeta({
   <NuxtLayout>
     <h1 class="text-2xl font-bold mb-4">Create Category</h1>
     <div class="container m-auto grid grid-cols-3 gap-4">
-      <div class="p-4 shadow-md border border-gray-100 rounded-lg col-span-2">
+      <div class="p-4 shadow-md border border-gray-100 rounded-md col-span-2">
         <form>
           <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
-              <h2 class="text-base font-semibold leading-7 text-gray-900">
-                Profile
-              </h2>
-              <p class="mt-1 text-sm leading-6 text-gray-600">
-                This information will be displayed publicly so be careful what
-                you share.
-              </p>
-
               <div
-                class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
+                class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6"
               >
-                <div class="sm:col-span-4">
+                <div class="col-span-full">
                   <label
-                    for="username"
+                    for="street-address"
                     class="block text-sm font-medium leading-6 text-gray-900"
-                    >Username</label
+                    >Category Title</label
                   >
                   <div class="mt-2">
-                    <div
-                      class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md"
-                    >
-                      <span
-                        class="flex select-none items-center pl-3 text-gray-500 sm:text-sm"
-                        >workcation.com/</span
-                      >
-                      <input
-                        type="text"
-                        name="username"
-                        id="username"
-                        autocomplete="username"
-                        class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                        placeholder="janesmith"
-                      />
-                    </div>
+                    <input
+                      type="text"
+                      name="street-address"
+                      id="street-address"
+                      autocomplete="street-address"
+                      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    />
                   </div>
                 </div>
 
@@ -54,7 +37,7 @@ definePageMeta({
                   <label
                     for="about"
                     class="block text-sm font-medium leading-6 text-gray-900"
-                    >About</label
+                    >Product Short Description</label
                   >
                   <div class="mt-2">
                     <textarea
@@ -64,9 +47,6 @@ definePageMeta({
                       class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     />
                   </div>
-                  <p class="mt-3 text-sm leading-6 text-gray-600">
-                    Write a few sentences about yourself.
-                  </p>
                 </div>
 
                 <div class="col-span-full">
@@ -423,7 +403,7 @@ definePageMeta({
           </div>
         </form>
       </div>
-      <div class="p-4 shadow-md border border-gray-100 rounded-lg col-span-1">
+      <div class="p-4 shadow-md border border-gray-100 rounded-md col-span-1">
         <h1 class="tile-marker">THREE</h1>
       </div>
     </div>

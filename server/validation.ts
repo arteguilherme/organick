@@ -1,15 +1,15 @@
 import Joi from "joi";
 
-export const CategorySchema = Joi.obobject({
-    name: Joi.string().requied(),
-    slug: Joi.string().requied().unique(),
+export const CategorySchema = Joi.object({
+  name: Joi.string().required(),
+  slug: Joi.string().required(),
 });
 
 export const ProdcutSchema = Joi.object({
-  name: Joi.string().requied(),
-  slug: Joi.string().requied().unique(),
-  summary: Joi.string().requied(),
-  categories: Joi.number().requied(),
+  name: Joi.string().required(),
+  slug: Joi.string().required(),
+  summary: Joi.string().required(),
+  categories: Joi.number().required(),
   published: Joi.date().required(),
   pageCount: Joi.number(),
 });

@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import slug from "mongoose-slug-generator";
+// import slug from "mongoose-slug-generator";
 
-mongoose.plugin(slug);
+// mongoose.plugin(slug);
 
 // book schema
 const schema: mongoose.Schema = new mongoose.Schema(
@@ -38,10 +38,10 @@ const schema: mongoose.Schema = new mongoose.Schema(
   { timestamps: true }
 );
 
-schema.pre("save", function (next) {
-  this.slug = this.name.split(" ").join("-");
-  next();
-});
+// schema.pre("save", function (next) {
+//   this.slug = this.name.split(" ").join("-");
+//   next();
+// });
 
 // book model
 export default mongoose.model("Category", schema);

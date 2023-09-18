@@ -1,6 +1,5 @@
-// import ProductModel from "~/server/models/Products.model";
+import ProductModel from "~/server/models/Product.model";
 
 export default defineEventHandler(async (event) => {
-  //   return await ProductModel.find().populate("authors");
-  return "Hello from Products";
+  return await ProductModel.find();
 });
