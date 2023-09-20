@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <nav class="bg-blue-500 p-4 flex items-center justify-between">
+  <nav class="bg-blue-900 p-4 flex items-center justify-between">
     <div>
       <h1 class="text-white text-xl font-semibold">SALUD 360</h1>
     </div>
