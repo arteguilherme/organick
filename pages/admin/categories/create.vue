@@ -1,5 +1,4 @@
 <script setup>
-import { ref, computed } from "vue";
 import { PhotoIcon, UserCircleIcon } from "@heroicons/vue/24/solid";
 import {
   Combobox,
@@ -11,27 +10,47 @@ import {
 } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/vue/20/solid";
 
-const people = [
-  { id: 1, name: "Wade Cooper" },
-  { id: 2, name: "Arlene Mccoy" },
-  { id: 3, name: "Devon Webb" },
-  { id: 4, name: "Tom Cook" },
-  { id: 5, name: "Tanya Fox" },
-  { id: 6, name: "Hellen Schmidt" },
+const visible = [
+  { id: 1, name: "Show" },
+  { id: 2, name: "Hide" },
 ];
+
+const image = reactive({
+  fileName: "",
+  preview: null,
+  preset: process.env.VUE_APP_UPLOAD_PRESET,
+  formData: null,
+  cloudName: process.env.VUE_APP_CLOUD_NAME,
+  success: "",
+});
+
+const handleFileChange = (event) => {
+  const file = event.files[0];
+  image.fileName = file.name;
+  image.formData = new FormData();
+  image.formData.append("upload_preset", image.preset);
+
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+
+  reader.onload = (e) => {
+    image.preview = e.target.result;
+    image.formData.append("file", image.preview);
+  };
+};
 
 definePageMeta({
   layout: "admin",
 });
 
-let selected = ref(people[0]);
+let selected = ref(visible[0]);
 let query = ref("");
 
-let filteredPeople = computed(() =>
+let filteredVisible = computed(() =>
   query.value === ""
-    ? people
-    : people.filter((person) =>
-        person.name
+    ? visible
+    : visible.filter((item) =>
+        item.name
           .toLowerCase()
           .replace(/\s+/g, "")
           .includes(query.value.toLowerCase().replace(/\s+/g, ""))
@@ -42,7 +61,7 @@ let filteredPeople = computed(() =>
   <NuxtLayout>
     <h1 class="text-2xl font-bold mb-4">Create Category</h1>
     <div class="container m-auto grid grid-cols-3 gap-4">
-      <div class=" rounded-md col-span-2">
+      <div class="rounded-md col-span-2">
         <div class="space-y-12 p-4 shadow-md border border-gray-100">
           <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div class="col-span-full">
@@ -92,8 +111,15 @@ let filteredPeople = computed(() =>
                 class="block text-sm font-medium leading-6 text-gray-900"
                 >Cover photo</label
               >
+              <img v-if="image.preview" v-bind:src="image.preview" />
+
               <div
                 class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10"
+                @dragover.prevent
+                @dragenter.prevent
+                @dragstart.prevent
+                @drop.prevent="handleFileChange($event.dataTransfer)"
+                v-else
               >
                 <div class="text-center">
                   <PhotoIcon
@@ -111,12 +137,13 @@ let filteredPeople = computed(() =>
                         name="file-upload"
                         type="file"
                         class="sr-only"
+                        @change="handleFileChange($event.target)"
                       />
                     </label>
                     <p class="pl-1">or drag and drop</p>
                   </div>
                   <p class="text-xs leading-5 text-gray-600">
-                    PNG, JPG, GIF up to 10MB
+                    PNG, JPG up to 10MB
                   </p>
                 </div>
               </div>
@@ -132,7 +159,7 @@ let filteredPeople = computed(() =>
                   >
                     <ComboboxInput
                       class="w-full border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0"
-                      :displayValue="(person) => person.name"
+                      :displayValue="(item) => item.name"
                       @change="query = $event.target.value"
                     />
                     <ComboboxButton
@@ -154,17 +181,17 @@ let filteredPeople = computed(() =>
                       class="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
                     >
                       <div
-                        v-if="filteredPeople.length === 0 && query !== ''"
+                        v-if="filteredVisible.length === 0 && query !== ''"
                         class="relative cursor-default select-none py-2 px-4 text-gray-700"
                       >
                         Nothing found.
                       </div>
 
                       <ComboboxOption
-                        v-for="person in filteredPeople"
+                        v-for="item in filteredVisible"
                         as="template"
-                        :key="person.id"
-                        :value="person"
+                        :key="item.id"
+                        :value="item"
                         v-slot="{ selected, active }"
                       >
                         <li
@@ -181,7 +208,7 @@ let filteredPeople = computed(() =>
                               'font-normal': !selected,
                             }"
                           >
-                            {{ person.name }}
+                            {{ item.name }}
                           </span>
                           <span
                             v-if="selected"
@@ -201,7 +228,9 @@ let filteredPeople = computed(() =>
               </Combobox>
             </div>
           </div>
-          <div class="flex items-center justify-end gap-x-4 p-4 border-t border-gray-900/10">
+          <div
+            class="flex items-center justify-end gap-x-4 p-4 border-t border-gray-900/10"
+          >
             <button
               type="button"
               class="w-full px-4 py-2 rounded-md bg-red-600 hover:bg-red-500 text-lg text-white ease-linear transition-all duration-150"
