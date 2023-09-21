@@ -66,9 +66,9 @@ const { handleSubmit } = useForm({
 });
 
 const submitCategory = handleSubmit(async (values) => {
-  console.log(category);
+  console.log(category.value);
   if (!category.value._id) {
-    await categoryStore.create(values);
+    await categoryStore.create(category.value);
   } else {
   }
 });
@@ -90,6 +90,7 @@ const submitCategory = handleSubmit(async (values) => {
                 <div class="mt-2">
                   <input
                     v-model="category.name"
+                    roles="required"
                     type="text"
                     name="category-title"
                     id="category-title"
@@ -108,6 +109,7 @@ const submitCategory = handleSubmit(async (values) => {
                 <div class="mt-2">
                   <textarea
                     v-model="category.description"
+                    roles="required"
                     id="summary"
                     name="summary"
                     rows="3"

@@ -10,17 +10,18 @@ const schema: mongoose.Schema = new mongoose.Schema(
       type: String,
       requied: true,
     },
-    slug: {
-      type: String,
-      requied: true,
-      unique: true,
-      slug: "name",
-    },
+    // slug: {
+    //   type: String,
+    //   requied: true,
+    //   unique: true,
+    //   slug: "name",
+    // },
     description: {
       type: String,
     },
     parent_id: {
       type: Number,
+      default: null,
     },
     featured: {
       type: Boolean,
@@ -30,9 +31,9 @@ const schema: mongoose.Schema = new mongoose.Schema(
       type: Boolean,
       default: 1,
     },
-    image: {
-      type: String,
-    },
+    // image: {
+    //   type: String,
+    // },
     pageCount: Number,
   },
   { timestamps: true }

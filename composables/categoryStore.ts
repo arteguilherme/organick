@@ -17,7 +17,7 @@ export const useCategoryStore = defineStore("category-store", {
       }
     },
     async create(category: ICategory) {
-      await $fetch("/api/categories/create", {
+      await $fetch("/api/categories", {
         method: "POST",
         body: category,
       })
