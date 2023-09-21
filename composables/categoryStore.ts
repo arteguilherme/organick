@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { ICategory } from "~/types";
+
 export const useCategoryStore = defineStore("category-store", {
   state: () => ({
     categories: [] as ICategory[],
@@ -29,7 +30,6 @@ export const useCategoryStore = defineStore("category-store", {
           await this.getAll();
           return { message: "Category created" };
         });
-
     },
   },
 });

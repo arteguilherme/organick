@@ -6,7 +6,8 @@ const products = [
     id: 1,
     name: "Brocolis",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694202/organick/Brocolis-removebg_aufhos.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694202/organick/Brocolis-removebg_aufhos.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$13.00",
   },
@@ -14,7 +15,8 @@ const products = [
     id: 2,
     name: "Banana",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694200/organick/Banana-removebg_gyiabu.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694200/organick/Banana-removebg_gyiabu.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$16.00",
   },
@@ -22,7 +24,8 @@ const products = [
     id: 3,
     name: "Castanha",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694204/organick/Castanha02-removebg_wueeyl.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694204/organick/Castanha02-removebg_wueeyl.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$21.00",
   },
@@ -30,7 +33,8 @@ const products = [
     id: 4,
     name: "Tomate",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694198/organick/Tomate-removebg_qedo0k.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694198/organick/Tomate-removebg_qedo0k.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$12.00",
   },
@@ -38,7 +42,8 @@ const products = [
     id: 5,
     name: "Feijao",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694208/organick/Feijao-removebg_csqdjn.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694208/organick/Feijao-removebg_csqdjn.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$9.00",
   },
@@ -46,7 +51,8 @@ const products = [
     id: 6,
     name: "Castanha",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694203/organick/Castanha01-removebg_tdpdz4.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694203/organick/Castanha01-removebg_tdpdz4.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$26.00",
   },
@@ -54,7 +60,8 @@ const products = [
     id: 7,
     name: "Ovos",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694189/organick/Ovos-removebg_kufxlf.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694189/organick/Ovos-removebg_kufxlf.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$11.00",
   },
@@ -62,7 +69,8 @@ const products = [
     id: 8,
     name: "Pao",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694190/organick/Pao-removebg_nfdpci.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694190/organick/Pao-removebg_nfdpci.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$8.00",
   },
@@ -72,7 +80,8 @@ const offers = [
     id: 1,
     name: "Couve Flor",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694207/organick/CouveFlor-removebg_eqbuiw.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694207/organick/CouveFlor-removebg_eqbuiw.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$13.00",
   },
@@ -80,7 +89,8 @@ const offers = [
     id: 2,
     name: "Abobora Verde",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694199/organick/AboboraVerde-removebg_btfnhy.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694199/organick/AboboraVerde-removebg_btfnhy.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$14.00",
   },
@@ -88,7 +98,8 @@ const offers = [
     id: 3,
     name: "Cebola",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694206/organick/Cebola-removebg_mvknus.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694206/organick/Cebola-removebg_mvknus.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$7.00",
   },
@@ -96,7 +107,8 @@ const offers = [
     id: 4,
     name: "Repolho",
     href: "/products/teste",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694192/organick/Repolho-removebg_cvs4c2.png",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694192/organick/Repolho-removebg_cvs4c2.png",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$9.00",
   },

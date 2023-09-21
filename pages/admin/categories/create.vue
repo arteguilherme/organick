@@ -9,6 +9,11 @@ import {
   TransitionRoot,
 } from "@headlessui/vue";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/vue/20/solid";
+import { useForm } from "vee-validate";
+
+definePageMeta({
+  layout: "admin",
+});
 
 const visible = [
   { id: 1, name: "Show" },
@@ -39,10 +44,6 @@ const handleFileChange = (event) => {
   };
 };
 
-definePageMeta({
-  layout: "admin",
-});
-
 let selected = ref(visible[0]);
 let query = ref("");
 
@@ -56,48 +57,84 @@ let filteredVisible = computed(() =>
           .includes(query.value.toLowerCase().replace(/\s+/g, ""))
       )
 );
+
+const categoryStore = useCategoryStore();
+const category = ref({});
+
+const { handleSubmit } = useForm({
+  initialValues: category,
+});
+
+const submitCategory = handleSubmit(async (values) => {
+  console.log(category);
+  if (!category.value._id) {
+    await categoryStore.create(values);
+  } else {
+  }
+});
 </script>
 <template>
   <NuxtLayout>
     <h1 class="text-2xl font-bold mb-4">Create Category</h1>
     <div class="container m-auto grid grid-cols-3 gap-4">
       <div class="rounded-md col-span-2">
-        <div class="space-y-12 p-4 shadow-md border border-gray-100">
-          <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <div class="col-span-full">
-              <label
-                for="category-title"
-                class="block text-sm font-medium leading-6 text-gray-900"
-                >Category Title</label
-              >
-              <div class="mt-2">
-                <input
-                  type="text"
-                  name="category-title"
-                  id="category-title"
-                  autocomplete="category-title"
-                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+        <form @submit="submitCategory">
+          <div class="space-y-12 p-4 shadow-md border border-gray-100">
+            <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              <div class="col-span-full">
+                <label
+                  for="category-title"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                  >Category Title</label
+                >
+                <div class="mt-2">
+                  <input
+                    v-model="category.name"
+                    type="text"
+                    name="category-title"
+                    id="category-title"
+                    autocomplete="category-title"
+                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div class="col-span-full">
-              <label
-                for="summary"
-                class="block text-sm font-medium leading-6 text-gray-900"
-                >Product Short Description</label
-              >
-              <div class="mt-2">
-                <textarea
-                  id="summary"
-                  name="summary"
-                  rows="3"
-                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
+              <div class="col-span-full">
+                <label
+                  for="summary"
+                  class="block text-sm font-medium leading-6 text-gray-900"
+                  >Product Short Description</label
+                >
+                <div class="mt-2">
+                  <textarea
+                    v-model="category.description"
+                    id="summary"
+                    name="summary"
+                    rows="3"
+                    class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
+
+          <div
+            class="flex items-center justify-end gap-x-4 p-4 border-t border-gray-900/10"
+          >
+            <button
+              type="button"
+              class="w-full px-4 py-2 rounded-md bg-red-600 hover:bg-red-500 text-lg text-white ease-linear transition-all duration-150"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="w-full px-4 py-2 rounded-md bg-blue-950 hover:bg-blue-900 text-lg text-white ease-linear transition-all duration-150"
+            >
+              Save
+            </button>
+          </div>
+        </form>
       </div>
       <div>
         <div class="shadow-md border border-gray-100 rounded-md col-span-1">
@@ -227,22 +264,6 @@ let filteredVisible = computed(() =>
                 </div>
               </Combobox>
             </div>
-          </div>
-          <div
-            class="flex items-center justify-end gap-x-4 p-4 border-t border-gray-900/10"
-          >
-            <button
-              type="button"
-              class="w-full px-4 py-2 rounded-md bg-red-600 hover:bg-red-500 text-lg text-white ease-linear transition-all duration-150"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              class="w-full px-4 py-2 rounded-md bg-blue-950 hover:bg-blue-900 text-lg text-white ease-linear transition-all duration-150"
-            >
-              Save
-            </button>
           </div>
         </div>
       </div>
