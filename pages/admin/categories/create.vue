@@ -66,9 +66,8 @@ const { handleSubmit } = useForm({
 });
 
 const submitCategory = handleSubmit(async (values) => {
-  console.log(category.value);
   if (!category.value._id) {
-    await categoryStore.create(category.value);
+    await categoryStore.create(values);
   } else {
   }
 });
