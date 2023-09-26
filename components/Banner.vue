@@ -49,4 +49,3 @@ const stats = [
     </div>
   </div>
 </template>
-

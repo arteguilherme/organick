@@ -29,7 +29,7 @@ const features = [
         <img
           src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694209/organick/EcoFriendlyImg_anuodk.jpg"
           alt="Product screenshot"
-          class="w-[48rem] max-w-none sm:w-[57rem]"
+          class="visible w-[48rem] max-w-none sm:w-[57rem]"
           width="2432"
           height="1442"
         />

@@ -131,7 +131,7 @@ const reviews = { href: "#", average: 4, totalCount: 117 };
           Our Products
         </h1>
       </div>
-      <div class="mx-auto max-w-2xl py-8 sm:py-8 lg:max-w-7xl">
+      <div class="mx-auto max-w-2xl px-6 py-8 sm:py-8 lg:max-w-7xl">
         <div
           class="mt-6 grid grid-cols-1 gap-x-4 gap-y-5 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6"
         >
@@ -154,7 +154,7 @@ const reviews = { href: "#", average: 4, totalCount: 117 };
     </div>
   </div>
   <Testimonial />
-  <div class="overflow-hidden py-14 sm:py-24 bg-cyan-950">
+  <div class="overflow-hidden px-6 py-14 sm:py-24 bg-cyan-950">
     <div class="mx-auto max-w-7xl">
       <div class="">
         <span class="text-3xl small-text text-green-600">Offer</span>

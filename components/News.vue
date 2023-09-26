@@ -5,7 +5,8 @@ const news = [
   {
     id: 1,
     title: "The Benefits of Vitamin D & How to Get It",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694210/organick/Lettuce_lcllge.jpg",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694210/organick/Lettuce_lcllge.jpg",
     summery:
       "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
     auth: "By Rachi Card",
@@ -14,7 +15,8 @@ const news = [
   {
     id: 2,
     title: "Our Favourite Summertime Tommeto",
-    imageSrc: "https://res.cloudinary.com/arteguilherme/image/upload/v1694694211/organick/Tomato_pib5jw.jpg",
+    imageSrc:
+      "https://res.cloudinary.com/arteguilherme/image/upload/v1694694211/organick/Tomato_pib5jw.jpg",
     summery:
       "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
     auth: "By Rachi Card",
@@ -23,7 +25,7 @@ const news = [
 ];
 </script>
 <template>
-  <div class="mx-auto max-w-7xl py-16 sm:py-28">
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-28">
     <div
       class="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 mb-10 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
     >
@@ -55,7 +57,7 @@ const news = [
           <img
             :src="`${item.imageSrc}`"
             alt=""
-            class="rounded-3xl"
+            class="rounded-3xl mb-56 sm:mb-0"
           />
           <div
             class="absolute top-0 flex flex-col items-center rounded-full m-10 pt-3 w-20 h-20 bg-white"
@@ -76,7 +78,7 @@ const news = [
             </span>
           </div>
           <div
-            class="absolute top-60 p-10 m-8 rounded-3xl bg-white space-y-2 drop-shadow-xl"
+            class="absolute top-24 sm:top-60 p-10 m-8 rounded-3xl bg-white space-y-2 drop-shadow-xl"
           >
             <div class="flex items-center space-x-2">
               <UserIcon class="w-6 h-6 text-yellow-300" />
@@ -99,4 +101,3 @@ const news = [
     </div>
   </div>
 </template>
-

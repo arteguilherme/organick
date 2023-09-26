@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
-  <div class="mx-auto max-w-7xl py-12 sm:py-16">
+  <div class="mx-auto max-w-7xl px-6 py-12 sm:py-16">
     <div
-      class="bg-[url(https://res.cloudinary.com/arteguilherme/image/upload/v1694694187/organick/Newsletter_w5ojlj.jpg)] bg-cover bg-center py-20 px-16 rounded-3xl p-20"
+      class="bg-[url(https://res.cloudinary.com/arteguilherme/image/upload/v1694694187/organick/Newsletter_w5ojlj.jpg)] bg-cover bg-center p-10 sm:py-20 sm:px-16 rounded-3xl"
     >
       <div
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-36 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
@@ -17,7 +17,7 @@
             type="email"
             autocomplete="email"
             required
-            class="w-80 flex-auto rounded-xl text-lg p-4 text-white"
+            class="sm:w-80 flex-auto rounded-xl text-lg p-4 text-white"
             placeholder="Your Email Address"
           />
           <button

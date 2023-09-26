@@ -67,7 +67,11 @@ const mobileMenuOpen = ref(false);
     <div
       class="mx-auto flex max-w-screen-2xl items-center justify-between p-6 lg:px-8"
     >
-      <NuxtLink to="/"><img src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694185/organick/logo_organick_zn7a9a.svg" alt="my-logo" /></NuxtLink>
+      <NuxtLink to="/"
+        ><img
+          src="https://res.cloudinary.com/arteguilherme/image/upload/v1694694185/organick/logo_organick_zn7a9a.svg"
+          alt="my-logo"
+      /></NuxtLink>
       <PopoverGroup class="hidden lg:flex lg:gap-x-8">
         <NuxtLink to="/" class="font-semibold leading-6 text-blue-950"
           >Home</NuxtLink
@@ -147,7 +151,7 @@ const mobileMenuOpen = ref(false);
         <NuxtLink to="/products" class="font-semibold leading-6 text-blue-950"
           >Shop</NuxtLink
         >
-        <NuxtLink to="/projexts" class="font-semibold leading-6 text-blue-950"
+        <NuxtLink to="/projects" class="font-semibold leading-6 text-blue-950"
           >Projects</NuxtLink
         >
         <NuxtLink to="/news" class="font-semibold leading-6 text-blue-950"
